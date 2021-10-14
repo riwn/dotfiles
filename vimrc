@@ -48,6 +48,10 @@ set expandtab
 set tabstop=2
 " 行頭でのTab文字の表示幅
 set shiftwidth=2
+augroup MakefileTab
+  au!
+  au FileType make set noexpandtab softtabstop&
+augroup END
 
 
 " 検索系
