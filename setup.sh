@@ -9,6 +9,8 @@
 # 未定義な変数があったら途中で終了する
 set -u
 
+# .vimフォルダを作成
+mkdir -p ~/.vim
 # 今のディレクトリ
 # dotfilesディレクトリに移動する
 BASEDIR=$(dirname $0)
@@ -27,3 +29,4 @@ done
 ln -snfv ${PWD}/vimrc ~/.vimrc
 ln -snfv ${PWD}/.p10k.zsh ~
 ln -snfv ${PWD}/modules/prezto ~/.zprezto
+ln -snfv ${PWD}/modules/vim-hybrid/colors ~/.vim/colors
