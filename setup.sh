@@ -11,6 +11,7 @@ set -u
 
 # .vimフォルダを作成
 mkdir -p ~/.vim
+mkdir -p ~/.vim/colors
 # 今のディレクトリ
 # dotfilesディレクトリに移動する
 BASEDIR=$(dirname $0)
@@ -29,4 +30,5 @@ done
 ln -snfv ${PWD}/vimrc ~/.vimrc
 ln -snfv ${PWD}/.p10k.zsh ~
 ln -snfv ${PWD}/modules/prezto ~/.zprezto
-ln -snfv ${PWD}/modules/vim-hybrid/colors ~/.vim/colors
+ln -snfv ${PWD}/modules/vim-hybrid/colors/hybrid.vim ~/.vim/colors/hybrid.vim
+
