@@ -4,6 +4,7 @@ dotfileの管理をするためのリポジトリ
 ## Clone
 ホームに置く
 ```sh
+cd ~
 
 git clone --recursive https://github.com/riwn/dotfiles.git
 
