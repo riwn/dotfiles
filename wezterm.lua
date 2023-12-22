@@ -13,12 +13,19 @@ end)
 if wezterm.config_builder then
   config = wezterm.config_builder()
 end
-
 -- This is where you actually apply your config choices
+config.keys = {
+  {
+    key = '0',
+    mods = 'CTRL',
+    action = wezterm.action.ResetFontAndWindowSize,
+  },
+}
 
 -- For example, changing the color scheme:
-config.color_scheme = 'Atelier Seaside (base16)'
-config.window_background_opacity = 0.85
+config.color_scheme = 'Hybrid (terminal.sexy)'
+config.window_background_opacity = 0.8
+config.text_background_opacity = 0.7
 config.font = wezterm.font("MesloLGS NF")
 
 -- and finally, return the configuration to wezterm
