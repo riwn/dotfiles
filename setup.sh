@@ -31,4 +31,5 @@ ln -snfv ${PWD}/vimrc ~/.vimrc
 ln -snfv ${PWD}/.p10k.zsh ~
 ln -snfv ${PWD}/modules/prezto ~/.zprezto
 ln -snfv ${PWD}/modules/vim-hybrid/colors/hybrid.vim ~/.vim/colors/hybrid.vim
+ln -snfv ${PWD}/wezterm.lua ~/.wezterm.lua
 
