@@ -3,11 +3,7 @@ local wezterm = require 'wezterm'
 
 -- This table will hold the configuration.
 local config = {}
-local mux = wezterm.mux
-wezterm.on("gui-startup", function(cmd)
-    local tab, pane, window = mux.spawn_window(cmd or {})
-    window:gui_window():toggle_fullscreen()
-end)
+
 -- In newer versions of wezterm, use the config_builder which will
 -- help provide clearer error messages
 if wezterm.config_builder then
