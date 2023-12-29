@@ -18,3 +18,43 @@ git submodule update --init --recursive
 - [MesloLGS NF Bold](https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf)
 - [MesloLGS NF Italic](https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf)
 - [MesloLGS NF Bold Italic](https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf)
+
+## 追加でインストールしておくと良いツール群
+
+### difftastic
+
+diffをわかりやすくしたツール  
+レビューがよりやりやすくなるので追加したい  
+
+[公式サイト](https://difftastic.wilfred.me.uk/)
+
+Mac
+```zsh
+$ brew install difftastic
+```
+
+Linux
+```zsh
+$ cargo install --locked difftastic
+```
+
+### zellij
+
+ターミナルマルチプレクサ
+
+### zoxide
+
+改良版cd
+よく使うディレクトリを登録しておくことで移動しやすくなる
+
+### bat
+
+改良版cat
+
+### exa
+
+改良版ls
+
+### httpie
+
+改良版curl
