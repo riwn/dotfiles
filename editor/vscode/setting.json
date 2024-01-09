@@ -1,0 +1,141 @@
+{
+    "workbench.iconTheme": "catppuccin-mocha",
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "workbench.editor.centeredLayoutAutoResize": false,
+    "workbench.startupEditor": "none",
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.formatOnPaste": true,
+    "editor.stickyScroll.enabled": true,
+    "editor.indentSize": "tabSize",
+    "editor.accessibilitySupport": "off",
+    "editor.inlineSuggest.enabled": true,
+    "editor.fontFamily": "MesloLGS NF",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "terminal.integrated.fontSize": 13,
+    "terminal.external.osxExec": "WezTerm.app",
+    "files.associations": {
+        "Makefile": "makefile"
+    },
+    "update.showReleaseNotes": false,
+    "extensions.ignoreRecommendations": true,
+    "window.zoomLevel": -1,
+    "better-comments.tags": [
+        {
+            "tag": "!",
+            "color": "#FF2D00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "?",
+            "color": "#3498DB",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "//",
+            "color": "#474747",
+            "strikethrough": true,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "todo",
+            "color": "#FF8C00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "*",
+            "color": "#98C379",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        }
+    ],
+    "better-comments.highlightPlainText": true,
+    "todo-tree.general.tags": [
+        "BUG",
+        "HACK",
+        "FIXME",
+        "TODO",
+        "XXX",
+        "REVIEW",
+        "OPTIMIZE",
+        "NOTE",
+        "WARNING",
+        "[ ]",
+        "[x]"
+    ],
+    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+    "todo-tree.tree.scanMode": "workspace only",
+    "todo-tree.tree.buttons.scanMode": true,
+    "todo-tree.highlights.defaultHighlight": {
+        "foreground": "#FFFFFF",
+        "background": "#9580FF",
+        "type": "whole-line",
+        "iconColor": "#8AFF80",
+        "opacity": 45
+    },
+    "todo-tree.highlights.customHighlight": {
+        "HACK": {
+            "icon": "shield"
+        },
+        "FIXME": {
+            "icon": "flame",
+            "background": "#FF5555",
+            "iconColor": "#FF5555"
+        },
+        "TODO": {
+            "icon": "tasklist"
+        },
+        "XXX": {
+            "icon": "zap",
+            "background": "#FF5555",
+            "iconColor": "#FF5555"
+        },
+        "REVIEW": {
+            "icon": "eye"
+        },
+        "OPTIMIZE": {
+            "icon": "circle-slash",
+            "background": "#FF5555",
+            "iconColor": "#FF5555"
+        },
+        "NOTE": {
+            "icon": "question",
+            "foreground": "#FFFFFF",
+            "background": "#008000"
+        },
+        "WARNING": {
+            "icon": "alert",
+            "background": "#FF5555",
+            "iconColor": "#FF5555"
+        }
+    },
+    "go.toolsManagement.autoUpdate": true,
+    "git.openRepositoryInParentFolders": "never",
+    "githubPullRequests.pullBranch": "never",
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": true,
+        "scminput": false
+    }
+}

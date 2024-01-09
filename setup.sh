@@ -27,7 +27,7 @@ for f in z??*; do
     ln -snfv ${PWD}/"$f" ~/."$f"
 done
 
-ln -snfv ${PWD}/vimrc ~/.vimrc
+ln -snfv ${PWD}/editor/vim/vimrc ~/.vimrc
 ln -snfv ${PWD}/.p10k.zsh ~
 ln -snfv ${PWD}/modules/prezto ~/.zprezto
 ln -snfv ${PWD}/modules/vim-hybrid/colors/hybrid.vim ~/.vim/colors/hybrid.vim
