@@ -9,9 +9,15 @@
 # 未定義な変数があったら途中で終了する
 set -u
 
-# .vimフォルダを作成
+# vscode設定フォルダを作成
+mkdir -p ~/Library/"Application Support"/Code/User
+# vim設定フォルダを作成
 mkdir -p ~/.vim
 mkdir -p ~/.vim/colors
+
+# zellijの設定フォルダを作成
+mkdir -p ~/Library/"Application Support"/org.Zellij-Contributors.Zellij
+
 # 今のディレクトリ
 # dotfilesディレクトリに移動する
 BASEDIR=$(dirname $0)
@@ -28,8 +34,10 @@ for f in z??*; do
 done
 
 ln -snfv ${PWD}/editor/vim/vimrc ~/.vimrc
+ln -snfv ${PWD}/editor/vscode/settings.json ~/Library/"Application Support"/Code/User/settings.json
 ln -snfv ${PWD}/.p10k.zsh ~
 ln -snfv ${PWD}/modules/prezto ~/.zprezto
 ls modules/vim/colors | xargs -I{} ln -snfv ${PWD}/modules/vim/colors/{} ~/.vim/colors/{}
+ln -snfv ${PWD}/tmux/zellij/config.kdl ~/Library/"Application Support"/org.Zellij-Contributors.Zellij/config.kdl
 ln -snfv ${PWD}/wezterm.lua ~/.wezterm.lua
 
