@@ -19,7 +19,7 @@ config.keys = {
 }
 
 -- For example, changing the color scheme:
-config.color_scheme = 'Hybrid (terminal.sexy)'
+config.color_scheme = 'Catppuccin Mocha'
 config.window_background_opacity = 0.8
 config.text_background_opacity = 0.7
 config.font = wezterm.font("MesloLGS NF")

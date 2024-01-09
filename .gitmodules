@@ -4,3 +4,6 @@
 [submodule "modules/vim-hybrid"]
 	path = modules/vim-hybrid
 	url = https://github.com/w0ng/vim-hybrid
+[submodule "modules/vim"]
+	path = modules/vim
+	url = git@github.com:catppuccin/vim.git

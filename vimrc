@@ -17,7 +17,7 @@ set showcmd
 " 背景を変更
 set background=dark
 " テーマを設定
-colorscheme hybrid
+colorscheme catppuccin_mocha
 " 行番号を表示
 set number
 " 現在の行を強調表示
