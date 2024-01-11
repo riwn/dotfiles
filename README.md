@@ -58,3 +58,10 @@ $ cargo install --locked difftastic
 ### httpie
 
 改良版curl
+
+## Go言語について
+
+以下のIssueをSubscribeしておくことで最新の更新情報が毎週得られる
+
+- https://github.com/golang/go/issues/33502
+
