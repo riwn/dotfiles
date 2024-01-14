@@ -9,8 +9,10 @@
 # 未定義な変数があったら途中で終了する
 set -u
 
-# vscode設定フォルダを作成
+# vscode設定フォルダと設定ファイルを作成
 mkdir -p ~/.config/Code/User
+jq -s add ./editor/vscode/*.json > ./editor/vscode/dist.json
+
 # vim設定フォルダを作成
 mkdir -p ~/.vim
 mkdir -p ~/.vim/colors
@@ -34,10 +36,13 @@ for f in z??*; do
 done
 
 ln -snfv ${PWD}/editor/vim/vimrc ~/.vimrc
-ln -snfv ${PWD}/editor/vscode/settings.json ~/.config/Code/User/settings.json
+ln -snfv ${PWD}/editor/vscode/dist.json ~/.config/Code/User/settings.json
 ln -snfv ${PWD}/.p10k.zsh ~
 ln -snfv ${PWD}/modules/prezto ~/.zprezto
-ls modules/vim/colors | xargs -I{} ln -snfv ${PWD}/modules/vim/colors/{} ~/.vim/colors/{}
+ls modules/catppuccin-vim/colors | xargs -I{} ln -snfv ${PWD}/modules/catppuccin-vim/colors/{} ~/.vim/colors/{}
 ln -snfc ${PWD}/tmux/zellij/config.kdl ~/.config/zellij/config.kdl
 ln -snfv ${PWD}/wezterm.lua ~/.wezterm.lua
+
+# KDEのColorSchemeの設定を行う(KDE環境ではない方はコメントアウト)
+./modules/catppuccin-kde/install.sh
 

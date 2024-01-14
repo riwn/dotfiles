@@ -1,0 +1,7 @@
+{
+    "go.generateTestsFlags": [
+        "-template_dir",
+        "/home/riwn/dotfiles/lang/go/templates"
+    ],
+    "window.zoomLevel": 1
+}

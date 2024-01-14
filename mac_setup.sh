@@ -11,6 +11,7 @@ set -u
 
 # vscode設定フォルダを作成
 mkdir -p ~/Library/"Application Support"/Code/User
+jq -s add ./editor/vscode/*.json > ./editor/vscode/dist.json
 # vim設定フォルダを作成
 mkdir -p ~/.vim
 mkdir -p ~/.vim/colors
@@ -34,10 +35,10 @@ for f in z??*; do
 done
 
 ln -snfv ${PWD}/editor/vim/vimrc ~/.vimrc
-ln -snfv ${PWD}/editor/vscode/settings.json ~/Library/"Application Support"/Code/User/settings.json
+ln -snfv ${PWD}/editor/vscode/dist.json ~/Library/"Application Support"/Code/User/settings.json
 ln -snfv ${PWD}/.p10k.zsh ~
 ln -snfv ${PWD}/modules/prezto ~/.zprezto
-ls modules/vim/colors | xargs -I{} ln -snfv ${PWD}/modules/vim/colors/{} ~/.vim/colors/{}
+ls modules/catppuccin-vim/colors | xargs -I{} ln -snfv ${PWD}/modules/catppuccin-vim/colors/{} ~/.vim/colors/{}
 ln -snfv ${PWD}/tmux/zellij/config.kdl ~/Library/"Application Support"/org.Zellij-Contributors.Zellij/config.kdl
 ln -snfv ${PWD}/wezterm.lua ~/.wezterm.lua
 

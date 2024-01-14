@@ -1,6 +1,9 @@
 [submodule "modules/prezto"]
 	path = modules/prezto
-	url = https://github.com/sorin-ionescu/prezto
-[submodule "modules/vim"]
-	path = modules/vim
+	url = git@github.com::sorin-ionescu/prezto
+[submodule "modules/catppuccin-kde"]
+	path = modules/catppuccin-kde
+	url = https://github.com/catppuccin/kde
+[submodule "modules/catppuccin-vim"]
+	path = modules/catppuccin-vim
 	url = git@github.com:catppuccin/vim.git
