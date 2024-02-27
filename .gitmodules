@@ -1,6 +1,6 @@
 [submodule "modules/prezto"]
 	path = modules/prezto
-	url = git@github.com::sorin-ionescu/prezto
+	url = git@github.com:sorin-ionescu/prezto
 [submodule "modules/catppuccin-kde"]
 	path = modules/catppuccin-kde
 	url = https://github.com/catppuccin/kde
