@@ -59,6 +59,10 @@ $ cargo install --locked difftastic
 
 改良版curl
 
+## SketchyBar
+
+Macの上部のBarの見栄えがよくなるツール
+
 ## Go言語について
 
 以下のIssueをSubscribeしておくことで最新の更新情報が毎週得られる
