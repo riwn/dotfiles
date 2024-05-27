@@ -43,3 +43,6 @@ ls modules/catppuccin-vim/colors | xargs -I{} ln -snfv ${PWD}/modules/catppuccin
 ln -snfv ${PWD}/tmux/zellij/config.kdl ~/.config/zellij/config.kdl
 ln -snfv ${PWD}/wezterm.lua ~/.wezterm.lua
 
+# KDEのColorSchemeの設定を行う(KDE環境ではない方はコメントアウト)
+./modules/catppuccin-kde/install.sh
+
