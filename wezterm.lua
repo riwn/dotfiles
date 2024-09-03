@@ -18,7 +18,10 @@ config.keys = {
   },
 }
 
--- For example, changing the color scheme:
+-- 閉じる際の確認ダイアログを消す
+config.window_close_confirmation = 'NeverPrompt'
+
+-- 見た目の変更
 config.color_scheme = 'Catppuccin Mocha'
 config.window_background_opacity = 0.8
 config.text_background_opacity = 0.7
